@@ -1,137 +1,112 @@
-/* Reset básico */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #fafafa;
-  color: #222;
+
+    background-color: white;
+    font-family: Cursive, 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-  margin-bottom: 40px;
-  border-bottom: 2px solid #ddd;
+
+.header { 
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    font-size: 20px;
+    background-color: #f4f4f4;
+
 }
 
-.header-name h1 {
-  font-size: 2rem;
-  color: #333;
+.nav-bar ul {
+
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.header-nav ul {
-  
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.nav-bar a { 
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
-.header-nav a {
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: 600;
+.nav-bar a:hover {
+
+    color: green;
 }
 
-.header-nav a:hover {
-  text-decoration: underline;
+.frontend-dev { 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #eef;
+
 }
 
-/* Frontend dev section */
-.front-dev {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  margin-bottom: 40px;
+.grid-section { 
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 50px;
 }
 
-.front-dev h2 {
-  font-size: 3rem;
-  color: #444;
+.grid-section article { 
+
+    flex: 1 1 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0, 0,0.1);
 }
 
-/* Main section wrapper com 3 colunas */
-.section-wrapper {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap; /* responsivo */
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.review { 
+
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0,0,0,01);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
 }
 
-/* Cada coluna ocupa espaço igual */
-.projects,
-.work-and-oss,
-.education {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+footer{
+
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 40px;
 }
 
-/* Projects list */
-.project-list p {
-  margin: 10px 0;
-  font-size: 1.1rem;
-}
+@media(max-width:768px) {
 
-/* Work and OSS lado a lado */
-.work-and-oss {
-  display: flex;
-  gap: 20px;
-}
+    .header {
 
-/* Work experience e Open Source cards */
-.work-experience,
-.open-source-work {
-  flex: 1;
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: inset 0 0 5px #ddd;
-}
+        flex-direction: column;
+        align-items: center;
+    } 
 
-.work-experience h3,
-.open-source-work h3,
-.projects h3,
-.education h3 {
-  margin-bottom: 15px;
-  color: #222;
-}
+    .grid-section {
 
-/* Links */
-a {
-  color: #0077cc;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Education */
-.education p {
-  margin: 8px 0;
-  font-size: 1.1rem;
-}
-
-/* Responsivo básico */
-@media (max-width: 900px) {
-  .section-wrapper {
-    flex-direction: column;
-  }
-
-  .work-and-oss {
-    flex-direction: column;
-  }
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
 }
