@@ -6,6 +6,8 @@ This is a basic personal portfolio website created using only **HTML** and **CSS
 
 This project is inspired by the [Basic HTML Website](https://roadmap.sh/projects/basic-html-website) on roadmap.sh.
 
+This project is inspired by the [Basic HTML Website](https://roadmap.sh/projects/portfolio-website) on roadmap.sh.
+
 ## 📁 Project Structure
 
 ├── index.html # Main HTML structure
